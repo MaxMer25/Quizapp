@@ -1,0 +1,11 @@
+.spoiler {
+  display: inline-block;
+  background-color: #f6f6f3;
+  margin: 5px 2px;
+  padding: 4px 10px;
+  color: transparent;
+  text-shadow: 0 0 5px rgb(0 0 0 / 30%);
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 6px;
+}
