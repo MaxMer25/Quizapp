@@ -71,7 +71,7 @@ body {
   bottom: 0;
   width: 100%;
   display: grid;
-  height: 80px;
+  height: 60px;
   background: bisque;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -84,6 +84,11 @@ body {
 .nav.personal_profil {
   background: rgb(218, 195, 166);
 }
+.nav.home:hover,
+.nav.bookmarks:hover {
+  transform: scale(1.1);
+  transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 2);
+}
 .settings {
   padding-bottom: 25%;
 }
@@ -91,7 +96,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 60px;
   background: bisque;
 }
 .user-info {
@@ -99,4 +104,8 @@ body {
 }
 .headline {
   text-align: center;
+  vertical-align: middle;
+}
+.dark-mode {
+  color: white;
 }
