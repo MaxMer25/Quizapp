@@ -62,4 +62,28 @@ body {
   color: aliceblue;
   padding-bottom: 0;
   justify-content: center;
+
+body {
+    background-color: lightblue;
+  
+}
+.headline {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 25px;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer__text {
+    display: inline-flex;
+    align-content: space-around;
+    background-color: black;
+    width: 100%;
+    color: aliceblue;
+   padding-bottom: 0;
+   justify-content: center;
 }
