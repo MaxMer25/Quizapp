@@ -5,6 +5,15 @@ body {
   padding: 0;
   margin: 0;
 }
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: bisque;
+  align-items: center;
+  justify-content: center;
+}
 .container-flex__fotoname,
 .container-flex__counterbookmarks,
 .container,
@@ -92,20 +101,26 @@ body {
 .settings {
   padding-bottom: 25%;
 }
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  background: bisque;
-}
+
 .user-info {
   padding-top: 20%;
 }
-.headline {
-  text-align: center;
-  vertical-align: middle;
-}
+
 .dark-mode {
   color: white;
+}
+@media (min-width: 700px) {
+  .container.for_counters {
+    width: 150px;
+  }
+  .user-foto {
+    width: 300px;
+    height: 300px;
+  }
+  .user-info {
+    padding-top: 10%;
+  }
+  .settings {
+    padding-bottom: 15%;
+  }
 }
