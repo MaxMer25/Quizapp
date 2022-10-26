@@ -5,6 +5,20 @@ body {
   padding: 0;
   margin: 0;
 }
+.dark-theme {
+  background-color: #999999;
+  color: bisque;
+}
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: bisque;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
 .container-flex__fotoname,
 .container-flex__counterbookmarks,
 .container,
@@ -30,6 +44,7 @@ body {
   width: 70px;
   height: 40px;
   border-radius: 7px;
+  color: black;
 }
 .switch-btn {
   display: inline-block;
@@ -72,40 +87,46 @@ body {
   width: 100%;
   display: grid;
   height: 60px;
-  background: bisque;
+
   grid-template-columns: 1fr 1fr 1fr;
 }
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: bisque;
 }
 
-.nav.personal_profil {
+.nav.personal_profil.choosen,
+.nav.bookmarks.choosen {
   background: rgb(218, 195, 166);
 }
 .nav.home:hover,
-.nav.bookmarks:hover {
+.nav.bookmarks:hover,
+.nav.personal_profil:hover {
   transform: scale(1.1);
   transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 2);
 }
 .settings {
   padding-bottom: 25%;
 }
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  background: bisque;
-}
+
 .user-info {
   padding-top: 20%;
 }
-.headline {
-  text-align: center;
-  vertical-align: middle;
-}
-.dark-mode {
-  color: white;
+
+@media (min-width: 700px) {
+  .container.for_counters {
+    width: 150px;
+  }
+  .user-foto {
+    width: 300px;
+    height: 300px;
+  }
+  .user-info {
+    padding-top: 10%;
+  }
+  .settings {
+    padding-bottom: 15%;
+  }
 }
