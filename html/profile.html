@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OMMA Quizapp</title>
-    <link rel="stylesheet" href="../css/profile.css" type="text/css" />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     <script src="/javascript/scripts.js" defer></script>
   </head>
   <body>
     <main>
       <header class="header">
-        <h1 class="headline" data-js="headline">OMMA Quizapp</h1>
+        <h1 class="headline">OMMA Quizapp</h1>
       </header>
-
-      <section class="user-info">
+      <div class="padding-top"></div>
+      <section>
         <div class="container-flex__fotoname">
           <div class="user-foto"></div>
-          <div data-js="user-name" class="user-name">Max Musterman</div>
+          <div class="user-name">Max Musterman</div>
         </div>
-        <div data-js="container-about" class="container-about">
+        <div class="container-about">
           <h2>About me</h2>
           <p class="question-card__answer">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
@@ -49,23 +49,24 @@
           </div>
         </div>
       </section>
-      <section class="settings">
-        <h2 class="tag" data-js="settings-headline">Settings</h2>
+      <section>
+        <h2 class="tag">Settings</h2>
         <div class="container-flex__darkmode">
-          <h2 data-js="darkmode-headline">Dark Mode</h2>
+          <h2>Dark Mode</h2>
           <div id="div" class="switch-btn" data-js="switch-btn"></div>
         </div>
       </section>
-
+      <div class="padding-bottom"></div>
       <footer class="container-grid__footer">
         <div class="nav home">
-          <img
-            class="home-light"
-            src="/images/home.png"
-            alt="home light"
-            width="50px"
-            height="50px"
-          />
+          <a href="/html/index.html">
+            <img
+              class="home-light"
+              src="/images/home.png"
+              alt="home light"
+              width="50px"
+              height="50px"
+          /></a>
         </div>
 
         <div class="nav bookmarks">
