@@ -1,3 +1,9 @@
+const bookmark = document.querySelector('[data-js="bookmark-button"]');
+
+bookmark.addEventListener("click", function bookmarkButton() {
+  bookmark.src = "/images/bookmark-red.png";
+});
+
 //character count
 
 const charCountQuestion = document.querySelector(
