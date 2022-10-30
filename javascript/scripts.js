@@ -1,3 +1,9 @@
+const bookmark = document.querySelector('[data-js="bookmark-button"]');
+
+bookmark.addEventListener("click", function bookmarkButton() {
+  bookmark.src = "/images/bookmark-red.png";
+});
+
 const switchButton = document.querySelector('[data-js="switch-btn"]');
 
 const currentTheme = localStorage.getItem("theme");

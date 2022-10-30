@@ -18,10 +18,12 @@
   border: 3px solid darkslateblue;
   width: 90vw;
   margin-bottom: 2%;
+  margin-top: 5%;
   border-radius: 1em;
   color: black;
-  padding-top: 15px;
-  background-color: rgb(164, 244, 255);
+  padding-top: 30px;
+  background-image: url("https://images.unsplash.com/photo-1508614999368-9260051292e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbG9yJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-size: cover;
 }
 
 .tag-list li {
@@ -43,4 +45,14 @@
 
 .tag-list li:hover {
   transition: 1s ease;
+}
+
+.question-card__bookmark {
+  float: right;
+  margin: -55px 5px;
+  filter: ;
+}
+
+.bookmarkRed {
+  content: url("/images/bookmark-red.png");
 }
