@@ -1,8 +1,8 @@
-const bookmark = document.querySelector('[data-js="bookmark-button"]');
+/* const bookmark = document.querySelector('[data-js="bookmark-button"]');
 
 bookmark.addEventListener("click", function bookmarkButton() {
   bookmark.src = "/images/bookmark-red.png";
-});
+}); */
 
 //character count
 
@@ -69,14 +69,18 @@ if (form) {
   }
 }
 
-textareaQuestion.addEventListener("input", (event) => {
-  const value = countChar(event);
-  charCountQuestion.textContent = value + " characters left";
-});
-textareaAnswer.addEventListener("input", (e) => {
-  const value = countChar(e);
-  charCountAnswer.textContent = value + " characters left";
-});
+if (textareaQuestion) {
+  textareaQuestion.addEventListener("input", (event) => {
+    const value = countChar(event);
+    charCountQuestion.textContent = value + " characters left";
+  });
+}
+if (textareaAnswer) {
+  textareaAnswer.addEventListener("input", (e) => {
+    const value = countChar(e);
+    charCountAnswer.textContent = value + " characters left";
+  });
+}
 function countChar(e) {
   const result = 150 - e.target.value.length;
   return result;
