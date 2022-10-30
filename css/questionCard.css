@@ -1,5 +1,7 @@
 .spoiler {
-  display: inline-block;
+  text-align: center;
+  align-self: center;
+
   background-color: #f6f6f3;
   margin: 5px 2px;
   padding: 4px 10px;
@@ -15,8 +17,11 @@
 }
 
 .question-card {
+  display: flex;
+  flex-direction: column;
+
   border: 3px solid darkslateblue;
-  width: 90vw;
+  width: 70vw;
   margin-bottom: 2%;
   margin-top: 5%;
   border-radius: 1em;
@@ -24,6 +29,10 @@
   padding-top: 30px;
   background-image: url("https://images.unsplash.com/photo-1508614999368-9260051292e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbG9yJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
   background-size: cover;
+}
+
+.tag-list {
+  align-self: center;
 }
 
 .tag-list li {
