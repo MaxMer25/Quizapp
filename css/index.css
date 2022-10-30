@@ -1,5 +1,7 @@
 .spoiler {
-  display: inline-block;
+  text-align: center;
+  align-self: center;
+
   background-color: #f6f6f3;
   margin: 5px 2px;
   padding: 4px 10px;
@@ -15,13 +17,20 @@
 }
 
 .question-card {
+  display: flex;
+  flex-direction: column;
+
   border: 3px solid darkslateblue;
-  width: 90vw;
+  width: 70vw;
   margin-bottom: 2%;
   border-radius: 1em;
   color: black;
   padding-top: 15px;
   background-color: rgb(164, 244, 255);
+}
+
+.tag-list {
+  align-self: center;
 }
 
 .tag-list li {
@@ -39,8 +48,4 @@
 .question-card__question {
   font-size: larger;
   text-align: center;
-}
-
-.tag-list li:hover {
-  transition: 1s ease;
 }

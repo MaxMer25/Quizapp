@@ -4,7 +4,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: lightblue;
+  background-color: rgb(195, 229, 240);
 }
 
 .padding-top {
@@ -18,6 +18,11 @@ body {
   background-color: #999999;
   color: bisque;
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 @media (min-width: 700px) {
   .container.for_counters {
     width: 150px;

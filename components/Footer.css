@@ -16,13 +16,13 @@
 
 .nav.personal_profil.choosen,
 .nav.bookmarks.choosen,
-.nav.form.choosen {
+.nav.forma.choosen {
   background: rgb(218, 195, 166);
 }
 .nav.home:hover,
 .nav.bookmarks:hover,
 .nav.personal_profil:hover,
-.nav.form:hover {
+.nav.forma:hover {
   transform: scale(1.1);
   transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 2);
 }
