@@ -14,6 +14,43 @@
         <h1 class="headline" data-js="headline">OMMA Quizapp</h1>
       </header>
       <div class="padding-bottom"></div>
+      <form class="form" data-js="form__submit-question">
+        <label for="question">Your question:</label>
+        <textarea
+          name="question"
+          data-js="form__textarea-questions"
+          id="question"
+          cols="30"
+          rows="10"
+          maxlength="150"
+        ></textarea>
+        <div
+          class="form__character-count"
+          data-js="form__character-count-questions"
+        >
+          150 characters left
+        </div>
+        <label for="answer">Your answer:</label>
+        <textarea
+          name="answer"
+          data-js="form__textarea-answers"
+          id="answer"
+          cols="30"
+          rows="10"
+          maxlength="150"
+        ></textarea>
+        <div
+          class="form__character-count"
+          data-js="form__character-count-answers"
+        >
+          150 characters left
+        </div>
+        <label for="tag">Tag:</label>
+        <input type="text" id="tag" name="tag" />
+        <button type="submit" class="form__button-submit">Submit</button>
+      </form>
+      <ul class="form__ul-list" data-js="form__ul-list"></ul>
+
       <div class="padding-top"></div>
       <footer class="container-grid__footer">
         <div class="nav home">
@@ -36,12 +73,12 @@
               height="50px"
           /></a>
         </div>
-        <div class="nav form choosen">
+        <div class="nav forma choosen">
           <a href="/html/form.html">
             <img
-              class="form dark"
+              class="forma dark"
               src="/images/form-dark.png"
-              alt="form dark"
+              alt="forma dark"
               width="50px"
               height="50px"
           /></a>
