@@ -10,6 +10,10 @@
   user-select: none;
   border-radius: 6px;
 }
+.answer_test {
+  color: black;
+}
+
 .container-question__cards {
   display: flex;
   flex-direction: column;

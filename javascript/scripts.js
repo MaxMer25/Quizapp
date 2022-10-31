@@ -1,8 +1,27 @@
-/* const bookmark = document.querySelector('[data-js="bookmark-button"]');
+const bookmark = document.querySelector('[data-js="bookmark-button"]');
+let test = false;
 
-bookmark.addEventListener("click", function bookmarkButton() {
-  bookmark.src = "/images/bookmark-red.png";
-}); */
+if (bookmark) {
+  bookmark.addEventListener("click", function bookmarkButton() {
+    if (test) {
+      bookmark.src = "/images/bookmark-red.png";
+      test = false;
+    } else {
+      bookmark.src = "/images/bookmark-light.png";
+      test = true;
+    }
+  });
+}
+
+// test answer showing
+
+const answer_test = document.querySelector('[data-js="question__answer-test"]');
+
+if (answer_test) {
+  answer_test.addEventListener("click", () => {
+    answer_test.classList.toggle("answer_test");
+  });
+}
 
 //character count
 
