@@ -17,8 +17,8 @@
 }
 
 .question-card {
-  /* display: flex;
-  flex-direction: column; */
+  /* display: flex; */
+  /* flex-direction: column; */
 
   border: 3px solid darkslateblue;
   width: 70vw;
@@ -27,8 +27,8 @@
   border-radius: 1em;
   color: black;
   padding-top: 30px;
- background-image: url("https://images.unsplash.com/photo-1508614999368-9260051292e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbG9yJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80"); */
-  background-size: cover; 
+  background-image: url("https://images.unsplash.com/photo-1508614999368-9260051292e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbG9yJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-size: cover;
 }
 
 .tag-list {
@@ -59,7 +59,7 @@
 .question-card__bookmark {
   float: right;
   margin: -55px 5px;
-  filter: ;
+  /* filter: ; */
 }
 
 .bookmarkRed {

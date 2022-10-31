@@ -44,7 +44,7 @@ if (form) {
     );
 
     const card = document.createElement("li");
-    const bookmark = document.createElement("div");
+    const bookmark = document.createElement("img");
     const question = document.createElement("div");
     const answer = document.createElement("div");
     const tag = document.createElement("ul");
@@ -54,10 +54,21 @@ if (form) {
     question.classList.add("question-card__question");
     answer.classList.add("question-card__answer", "spoiler");
     tag.classList.add("tag-list");
-    li.classList.add("tag__list-li");
+    /* li.classList.add("tag-list"); */
+
     question.textContent = newCard.questionFromForm;
     answer.textContent = newCard.answerFromForm;
     li.textContent = newCard.tagFromForm;
+    bookmark.innerHTML = `
+    
+            data-js="bookmark-button"
+            class="question-card__bookmark"
+            src="/images/bookmark-light.png"
+            alt="bookmarks dark"
+            width="50px"
+            height="50px"
+        
+    `;
 
     card.append(bookmark);
     card.append(question);
